@@ -6,7 +6,7 @@ export default class CandiatesItem extends Component {
     return (
       <div className='mx-5'>
         <div class="card" style={{width: '18rem'}}>
-            {/* <img src="..." class="card-img-top" alt="..."/> */}
+           
             <div class="card-body d-flex" style={{alignItems:'center', justifyContent:'center'}}>
                 <h5 class="card-title">{title}</h5>
                
@@ -20,10 +20,7 @@ export default class CandiatesItem extends Component {
                 
                 <p class="card-text">{description}</p>
             </div>
-            {/* <div class="card-body">
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
-            </div> */}
+            
         </div>
       </div>
     )

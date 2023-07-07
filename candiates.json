@@ -1,0 +1,20 @@
+{
+    "candidates": [
+      {
+        "name": "John Smith",
+        "role": "Software Engineer",
+        "location": "San Francisco, CA",
+        "skills": ["Java", "Python", "JavaScript", "HTML", "CSS"],
+        "description": "John Smith is an experienced software engineer with expertise in Java, Python, JavaScript, HTML, and CSS. He has a strong problem-solving ability and a passion for building scalable and efficient applications. With excellent communication skills and a collaborative mindset, John excels in team environments and consistently delivers high-quality code."
+      },
+      {
+        "name": "Emily Johnson",
+        "role": "Data Scientist",
+        "location": "New York, NY",
+        "skills": ["Python", "R", "Machine Learning", "Data Analysis", "SQL"],
+        "description": "Emily Johnson is a skilled data scientist proficient in Python, R, machine learning, data analysis, and SQL. She possesses a deep understanding of statistical models and algorithms, allowing her to extract valuable insights from complex datasets. Emily has a strong attention to detail and excels in problem-solving. She is passionate about leveraging data to drive strategic decision-making."
+      },
+      // ... (98 more candidate entries)
+    ]
+  }
+  

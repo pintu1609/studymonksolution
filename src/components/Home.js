@@ -10,7 +10,7 @@ export default class Home extends Component {
             <NavBar/>
             <div style={{backgroundColor: '#8fb7dbc7'}}>
         
-                <div className="container d-flex flex-col" style={{alignItems:'center', justifyContent:'center', width:'100vw', height:517,padding:-10, color:'rgb(0 255 83 / 63%)',fontStyle:'italic'}}>
+                <div className="container d-flex flex-col" style={{alignItems:'center', justifyContent:'center', width:'100vw', height:578,padding:-10, color:'rgb(0 188 255 / 89%)',fontStyle:'italic'}}>
                 
                 <p className='' style={{padding:-15, marginBottom:0}}>Unlocking Global Talent Revolutionize</p>
                  <p className='' style={{padding:-15}}>Your Hiring with E-Recruitment!</p>

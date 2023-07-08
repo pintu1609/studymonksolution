@@ -20,10 +20,12 @@ class Candidates extends Component {
     };
   }
 
+  
   componentDidMount() {
     const { isloggedIn, navigate } = this.props;
-
+    console.log(isloggedIn)
     if (!isloggedIn) return navigate("/login"); 
+    
     
   }
   // const [searchTerm, setSearchTerm] = useState();
@@ -46,7 +48,7 @@ handleSearchChange = (value) => {
 };
 
   render() {
-     if(!this.props.isloggedIn) return null;
+     
     const filteredArticles = articles.filter((article) =>{
       // article.title.toLowerCase().includes(searchTerm.toLowerCase())
         

@@ -79,7 +79,7 @@ class Login extends Component {
                     </div>
                     <div class=" my-2"style={{fontSize:12}}>
                          <Link className="nav-link"  to="/register">Don.t have a account! Register</Link>
-                         <a className="nav-link" href="#">Forget Password</a>
+                         <Link className="nav-link" to="/">Forget Password</Link>
                     </div>
                 </form>
                 </div>    

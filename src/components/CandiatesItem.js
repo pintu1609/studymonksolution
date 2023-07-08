@@ -5,7 +5,7 @@ export default class CandiatesItem extends Component {
     let{title, name, description, skills, location}=this.props;
     return (
       <div className='mx-5 my-3'>
-        <div class="card" style={{width: '18rem'}}>
+        <div class="card" style={{width: '18rem' }}>
            
             <div class="card-body d-flex" style={{alignItems:'center', justifyContent:'center'}}>
                 <h5 class="card-title">{title}</h5>

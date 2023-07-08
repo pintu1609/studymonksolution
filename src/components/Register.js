@@ -61,7 +61,7 @@ import { Link } from 'react-router-dom';
     const { firstName, lastName, userEmail, phone, password } = this.state;
     return (
       <div>
-            <div className="login d-flex" style={{height:550}}>
+            <div className="login d-flex" style={{height:'100vh',backgroundColor:'rgb(192 237 255 / 54%)'}}>
                 <div className="container2 d-flex flex-column" style={{ width:'50%', alignItems:'center',justifyContent:'center',fontStyle:'italic'}}>
                     <h2>Welcome</h2>
                     <h3>Join the Journey. Register and </h3>

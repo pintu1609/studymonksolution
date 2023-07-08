@@ -26,7 +26,7 @@ export default class Home extends Component {
                 <div>
                 <h2 className='my-2 mx-2 d-flex'style={{fontStyle:'italic',justifyContent:'center',alignItems:'center'}}>Benefit of E-Recruitment</h2>
                 <div className="benefit d-flex flex-row mb-3" style={{alignItems:'center', justifyContent:'center'}}>
-                <div class="card" style={{width: '20rem',margin:10,backgroundColor:'#B87C4C', borderRadius:20}}>
+                <div class="card" style={{width: '20rem',margin:10,backgroundColor:'rgb(184 124 76 / 42%)', borderRadius:20}}>
                     <div class="card-body">
                     <h5 class="card-title">Enhanced Reach and Access to a Global Talent Pool</h5>
                     <p class="card-text">Enhanced Reach and Access to a Global Talent Pool: E-recruitment expands
@@ -37,7 +37,7 @@ export default class Home extends Component {
                     </div>
                 </div>
 
-                <div class="card" style={{width: '18rem', margin:10,backgroundColor:'#B87C4C', borderRadius:20}}>
+                <div class="card" style={{width: '18rem', margin:10,backgroundColor:'rgb(184 124 76 / 42%)', borderRadius:20}}>
                     
                     <div class="card-body">
                         <h5 class="card-title">Streamlined and Efficient Recruitment Process</h5>
@@ -49,7 +49,7 @@ export default class Home extends Component {
                         </div>
                     </div>
 
-                <div class="card" style={{width: '18rem', margin:10,backgroundColor:'#B87C4C', borderRadius:20}}>
+                <div class="card" style={{width: '18rem', margin:10,backgroundColor:'rgb(184 124 76 / 42%)', borderRadius:20}}>
                     
                     <div class="card-body">
                         <h5 class="card-title"> Data-Driven Decision Making</h5>

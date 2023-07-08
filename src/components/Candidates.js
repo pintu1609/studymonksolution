@@ -20,7 +20,7 @@ class Candidates extends Component {
     };
   }
 
-  
+
   componentDidMount() {
     const { isloggedIn, navigate } = this.props;
     console.log(isloggedIn)
@@ -28,20 +28,7 @@ class Candidates extends Component {
     
     
   }
-  // const [searchTerm, setSearchTerm] = useState();
-//   handleSearch = (searchTerm) => {
-//     const filteredArticles = this.state.articles.filter((article) =>
-//       // article.title.toLowerCase().includes(searchTerm.toLowerCase())
-//       {const { name, role, location } = article;
-//       //const { city, state, country } = location;
-//       const searchFields = [name, role, location];
-//       return searchFields.some((field) =>
-//         field?.toLowerCase()?.includes(searchTerm.toLowerCase())
-//       );
-//    }
-//     )
-//     this.setState({ filteredArticles });
-//    };
+  
 
 handleSearchChange = (value) => {
   this.setState({ searchValue: value });
@@ -50,14 +37,14 @@ handleSearchChange = (value) => {
   render() {
      
     const filteredArticles = articles.filter((article) =>{
-      // article.title.toLowerCase().includes(searchTerm.toLowerCase())
+     
         
       
         
           const { name, role, location } = article;
-      //const { city, state, country } = location;
+     
       const searchFields = [name, role, location];
-      // console.log(this.state.searchValue)
+     
       return searchFields.some((field) =>
         field.toLowerCase().includes(this.state.searchValue.toLowerCase())
       );
@@ -66,8 +53,8 @@ handleSearchChange = (value) => {
       <div>
         <NavBar />
         <Search setSearchValue={this.handleSearchChange} />
-        <div className="d-flex" style={{ alignItems: 'center', justifyContent: 'center' }}>
-          <h2>Candidates List</h2>
+        <div className="d-flex" style={{ alignItems: 'center', justifyContent: 'center',height:'6vh'}}>
+          <h2 style={{fontStyle:'italic'}}>Candidates List</h2>
         </div>
         <div className="row">
           {filteredArticles.map((element) => (
@@ -82,7 +69,7 @@ handleSearchChange = (value) => {
             </div>
           ))}
         </div>
-        <Footer/>
+      <Footer/>
       </div>
     );
   }

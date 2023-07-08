@@ -10,12 +10,13 @@ import Footer from './Footer';
 // import { useState } from 'react';
 
 class Candidates extends Component {
-  //  navigate = useNavigate();
+  
   constructor() {
     super();
     this.state = {
       articles: articles,
       loading: false,
+      searchValue: ''
     };
   }
 
@@ -27,30 +28,48 @@ class Candidates extends Component {
     }
   }
   // const [searchTerm, setSearchTerm] = useState();
-  handleSearch = (searchTerm) => {
-    const filteredArticles = this.state.articles.filter((article) =>
-      // article.title.toLowerCase().includes(searchTerm.toLowerCase())
-      {const { name, role, location } = article;
-      //const { city, state, country } = location;
-      const searchFields = [name, role, location];
-      return searchFields.some((field) =>
-        field?.toLowerCase()?.includes(searchTerm.toLowerCase())
-      );
-  }
-    )
-    this.setState({ filteredArticles });
-  };
+//   handleSearch = (searchTerm) => {
+//     const filteredArticles = this.state.articles.filter((article) =>
+//       // article.title.toLowerCase().includes(searchTerm.toLowerCase())
+//       {const { name, role, location } = article;
+//       //const { city, state, country } = location;
+//       const searchFields = [name, role, location];
+//       return searchFields.some((field) =>
+//         field?.toLowerCase()?.includes(searchTerm.toLowerCase())
+//       );
+//    }
+//     )
+//     this.setState({ filteredArticles });
+//    };
+
+handleSearchChange = (value) => {
+  this.setState({ searchValue: value });
+};
 
   render() {
+
+    const filteredArticles = articles.filter((article) =>{
+      // article.title.toLowerCase().includes(searchTerm.toLowerCase())
+        
+      
+        
+          const { name, role, location } = article;
+      //const { city, state, country } = location;
+      const searchFields = [name, role, location];
+      // console.log(this.state.searchValue)
+      return searchFields.some((field) =>
+        field.toLowerCase().includes(this.state.searchValue.toLowerCase())
+      );
+      })
     return (
       <div>
         <NavBar />
-        <Search onSearch={this.handleSearch} />
+        <Search setSearchValue={this.handleSearchChange} />
         <div className="d-flex" style={{ alignItems: 'center', justifyContent: 'center' }}>
           <h2>Candidates List</h2>
         </div>
         <div className="row">
-          {this.state.articles.map((element) => (
+          {filteredArticles.map((element) => (
             <div className="col-md-4" key={element.userid}>
               <CandiatesItem
                 title={element.role}

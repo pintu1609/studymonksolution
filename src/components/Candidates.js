@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { useNavigate } from 'react-router-dom';
+
 import Search from './Search';
 import CandiatesItem from './CandiatesItem';
 import NavBar from './NavBar';
@@ -7,7 +7,7 @@ import { connect } from 'react-redux';
 import { articles } from './data';
 import withRouter from '../utils/withRouter';
 import Footer from './Footer';
-// import { useState } from 'react';
+
 
 class Candidates extends Component {
   
@@ -24,7 +24,7 @@ class Candidates extends Component {
     const { isloggedIn, navigate } = this.props;
 
     if (!isloggedIn) {
-      navigate("/login"); // Navigate to the login page if not logged in
+      navigate("/login"); 
     }
   }
   // const [searchTerm, setSearchTerm] = useState();
